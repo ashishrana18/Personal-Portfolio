@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- <-- header section starts here -->  
+
+    <div id="header">
+        <div class="container">
+              <nav class="navbar">
+                <div class="name"><h1><span>A</span>shish<span>.</span></h1></div>
+                <ul>
+                    <li class="underline"><a href="#header">Home</a></li>
+                    <li class="underline"><a href="#about">About</a></li>
+                    <li class="underline"><a href="#projects">Work</a></li>
+                    <li class="underline"><a href="#skill">Skills</a></li>
+                    <li class="underline"><a href="#POR">POR's</a></li>
+                    <li class="underline"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header-text">
+                <p>Hello, my name is </p>
+                <h1>Ashish</h1>
+                <h4>And I'm a <span class="software">Software Developer</span></h4>
+                <h5>also, a <span class="video">Video Editor</span></h5>
+                <img src="video-editor.png">
+              </div>
+        </div>
+    </div>
+
+    <!-- <-- about section starts here --> 
+
+    <div id="about">
+        <div class="container2">
+            <div class="row">
+                <div class="col-1">
+                    <img src="myself.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="about-col">About Me</h1>
+                    <h2>Hey there! I'm Ashish and I'm a Software Developer</h2>
+                    <div class="contains">
+                        <p>Currently, I am in my pre-final year at IIT Ropar. I will always had a keen interest in programming and software 
+                            development.Using HTML,CSS and Javascript,I have created multiple websites. I am profocient at JAVA data structure and algorithms.</p>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- we have given same name to id and function opentab parameter , so we can directly access , content of respective link  -->
+                    <div class="tab-content active-tab skills" id="skills">
+                        <ul>
+                            <li><span>Web Development</span></li>
+                            <li><span>JAVA</span><br>DSA , OOPS</li>
+                            <li><span>Graphic Designing</span><br>Photoshop , After Effects , Canva</li>
+                            <li><span>Video Editing</span><br>Final Cut Pro , Premiere Pro</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content education" id="education">
+                        <ul>
+                            <!-- <li><span>Secondary</span></li> -->
+                            <li><span>2019</span><br>Completed 10th, Model School , Kalanaur</li>
+                            <li><span>2021</span><br>Completed 12th, Model School , Rohtak</li>
+                            <!-- <li><span>Video Editing</span><br>Final Cut Pro , Premiere Pro</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my projects section starts here -->
+
+    <div id="projects">
+        <div class="container3">
+            <h1>My Work</h1>
+            <div class="list">
+                <div class="work">
+                    <img src="amazon-logo.jpg">
+                    <div class="layer">
+                        <h3>Amazon Website Clone</h3>
+                        <p>This is the frontend clone of Amazon website.</p>
+                        <a href="https://ashishrana18.github.io/Amazon-clone/" target="_blank"><i class="fa fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="to" src="todo.jpg">
+                    <div class="layer">
+                        <h3>To-Do list</h3>
+                        <p>This is To-Do list using Javascript.</p>
+                        <a href="#"><i class="fa fa-solid fa-up-right-from-square" target="_blank"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="to" src="jobs-loss1.jpg">
+                    <div class="layer">
+                        <h3>Jobs Loss</h3>
+                        <p>This project explains about jobs loss due to AI.</p>
+                        <a href="https://drive.google.com/file/d/12K7jnaz-_fEjZXwbL139OFtOgMPY5_hg/view" target="_blank"><i class="fa fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills section starts here -->    
+    <div id="skill" class="skill"> 
+        <!-- /* we have already used id and class name skills */ -->
+        <h1>My skills</h1>
+        <div class="skill-contents">
+            <div class="left">
+                <div class="text"><h3>My creative skills</h3></div>
+                <div class="para">Apart from a Pre-Final Year B.Tech student of Civil Engineering am a programmer, web developer, video editor, motion designer, artist and many more. So basically I know some technical skills along with having creative mind that help me to bring out new ideas.</div>
+            </div>
+            <div class="right">
+                <img src="COLLEGE.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- POR's section starts here --> 
+    <div class="POR" id="POR">
+        <div class="container4">
+            <h1 class="title">My POR's</h1>
+            <h3>Positions of Responsibility</h3>
+            <div class="caraousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="alpha.jpg" alt="">
+                        <div class="text">Co-ordinator</div>
+                        <p>Coordinator of Alpha Productions , official videography club of IIT Ropar</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="fest.jpg" alt="">
+                        <div class="text">Event Co-ordinator</div>
+                        <p>Event coordinator at Zeitgeist, annual cultural fest of IIT Ropar</p>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="box">
+                        <img src="image/fest.jpg" alt="">
+                        <div class="text">Co-ordinator</div>
+                        <p>Coordinator of Alpha Productions , official videography club of IIT Ropar</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section starts here --> 
+    <div class="contact" id="contact">
+        <div class="container5">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><a href="#"><i class="fa-solid fa-paper-plane"></i></a>2021ceb1013@iitrpr.ac.in</p>
+                    <p><a href="#"><i class="fa-solid fa-phone"></i>></i></a>+91-7206079812</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/ashish_r.a.n.a?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" target ="_blank"></i></a>
+                    </div>
+                    <a href="/Users/ashish/Downloads/certificates/Resume.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <span id="msg"><br></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section starts here --> 
+    <footer id="footer">
+        <div class="created">© Created by Ashish</div>
+    </footer>
+
+    <script>
+        var tablink = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(links of tablink){
+                links.classList.remove("active-links");
+            }
+            for(contents of tabcontent){
+                contents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links"); 
+            /* returns the element which targets the event, for reference read : "https://www.w3schools.com/jsref/event_currenttarget.asp" */
+
+            // 1st statement-->
+            document.getElementById(tabname).classList.add("active-tab");
+            // 2nd statement-->
+            /* let tabs = document.getElementsByClassName(tabname);
+               for(tab of tabs){
+               tab.classList.add("active-tab");
+               } 
+            */
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBgeQyD5vzR7Q-CEOxv-jM3C9e-ZRapBUM2LuM8r6S3YFuft1jLZ-BcHx6UytAjtEq/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
